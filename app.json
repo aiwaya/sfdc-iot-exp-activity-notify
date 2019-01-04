@@ -45,8 +45,8 @@
       "required": true
     },
     "SENDGRID_API_KEY": {
-      "description": "Enter Sendgrid API key. Please refer to https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key for creating API key",
-      "value": "",
+      "description": "After install, enter sendgrid API key. Please refer to https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key for creating API key",
+      "value": "Set up latter",
       "required": true
     }
   }
