@@ -1,0 +1,46 @@
+{
+  "name": "SFDC IoT Explorer Activity Notifier",
+  "description": "SFDC IoT Explorer Activity Notifier",
+  "repository": "https://github.com/aiwaya/sfdc-iot-exp-activity-notify",
+  "addons": ["scheduler:standard", "sendgrid:starter", "papertrail:choklad"],
+  "env": {
+    "FROM_EMAIL_ADDRESS": {
+      "description": "FROM_EMAIL_ADDRESS",
+      "value": "",
+      "required": true
+    },
+    "TO_EMAIL_ADDRESS": {
+      "description": "TO_EMAIL_ADDRESS",
+      "value": ""
+    },
+    "SFDC_API_VERSION": {
+      "description": "SFDC_API_VERSION",
+      "value": "44.0"
+    },
+    "SFDC_USERNAME": {
+      "description": "SFDC_USERNAME",
+      "value": ""
+    },
+    "SFDC_PASSWORD": {
+      "description": "SFDC_PASSWORD",
+      "value": ""
+    },
+    "SFDC_SECURITY_TOKEN": {
+      "description": "SFDC_SECURITY_TOKEN",
+      "value": "",
+      "required": false
+    },
+    "SFDC_LOGIN_URL": {
+      "description": "SFDC_LOGIN_URL",
+      "value": "https://login.salesforce.com"
+    },
+    "SENDGRID_API_KEY": {
+      "description": "SENDGRID_API_KEY",
+      "value": "",
+      "required": false
+    }
+  }
+}
+
+
+

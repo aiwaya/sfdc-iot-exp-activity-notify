@@ -1,0 +1,10 @@
+{
+  "name": "sfdc-iot-exp-activity-notify",
+  "version": "0.0.1",
+  "dependencies": {
+    "jsforce": "^1.9.1",
+    "mailgun-js":"^0.22.0",
+    "sendgrid":"~5.2.3"
+
+  }
+}
