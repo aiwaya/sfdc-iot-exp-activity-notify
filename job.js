@@ -13,6 +13,7 @@
 const sendgrid_api_key = process.env.SENDGRID_API_KEY;
 const from_email_address = process.env.FROM_EMAIL_ADDRESS;
 const to_email_address = process.env.TO_EMAIL_ADDRESS;
+const email_subject = process.env.EMAIL_SUBJECT;
 
 const sfdc_api_version = process.env.SFDC_API_VERSION; //44.0
 const sfdc_username = process.env.SFDC_USERNAME;
@@ -61,7 +62,7 @@ conn.login(sfdc_username, sfdc_password + sfdc_security_token, function(err, use
         var sg = require('sendgrid')(sendgrid_api_key);
         var from_email = new helper.Email(from_email_address);
         var to_email = new helper.Email(to_email_address);
-        var subject = 'IOT EXPLORER : ' + count + ' ERROR/S';
+        var subject = email_subject + ' [' + count + ' error/s]';
         var content = new helper.Content('text/html', msgs);
         var mail = new helper.Mail(from_email, subject, to_email, content);
 

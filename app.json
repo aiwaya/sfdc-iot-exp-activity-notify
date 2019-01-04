@@ -5,39 +5,49 @@
   "addons": ["scheduler:standard", "sendgrid:starter", "papertrail:choklad"],
   "env": {
     "FROM_EMAIL_ADDRESS": {
-      "description": "FROM_EMAIL_ADDRESS",
+      "description": "This will display to the user as the email address who sent this email. Sendgrid will send the verification email to the address you enter in this field",
       "value": "",
       "required": true
     },
     "TO_EMAIL_ADDRESS": {
-      "description": "TO_EMAIL_ADDRESS",
-      "value": ""
+      "description": "This is an email address which you want to notify",
+      "value": "",
+      "required": true
+    },
+    "EMAIL_SUBJECT": {
+      "description": "This is an email subject which you send",
+      "value": "IoT Explorer : Activitiy Error",
+      "required": true
     },
     "SFDC_API_VERSION": {
-      "description": "SFDC_API_VERSION",
-      "value": "44.0"
+      "description": "Salesforce API Version",
+      "value": "44.0",
+      "required": true
     },
     "SFDC_USERNAME": {
-      "description": "SFDC_USERNAME",
-      "value": ""
+      "description": "Salesforce Username",
+      "value": "",
+      "required": true
     },
     "SFDC_PASSWORD": {
-      "description": "SFDC_PASSWORD",
-      "value": ""
+      "description": "Salesforce Password",
+      "value": "",
+      "required": true
     },
     "SFDC_SECURITY_TOKEN": {
-      "description": "SFDC_SECURITY_TOKEN",
+      "description": "Salesforce Security Token",
       "value": "",
       "required": false
     },
     "SFDC_LOGIN_URL": {
-      "description": "SFDC_LOGIN_URL",
-      "value": "https://login.salesforce.com"
+      "description": "In case you want to login sandbox, please enter https://test.salesforce.com",
+      "value": "https://login.salesforce.com",
+      "required": true
     },
     "SENDGRID_API_KEY": {
-      "description": "SENDGRID_API_KEY",
+      "description": "Enter Sendgrid API key. Please refer to https://sendgrid.com/docs/ui/account-and-settings/api-keys/#creating-an-api-key for creating API key",
       "value": "",
-      "required": false
+      "required": true
     }
   }
 }
